@@ -13,7 +13,6 @@ $("#registerForm").on('submit', function (e) {
         success: function (response) {
             if (response === "success") {
                 window.location.href = "../login.html";
-                //alert("Registration successful");
             } else {
                 $("#result").text(response);
             }

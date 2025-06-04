@@ -24,10 +24,11 @@ if($action === "post"){
     $age = (int)$_POST["age"];
     $dob = $_POST["dob"];
     $contact = $_POST["contact"];
+    $img_data = $_POST["img_data"];
     $bulk = new MongoDB\Driver\BulkWrite;
     $bulk->update(
         ['email' => $email],
-        ['email' => $email, 'name' => $name, 'age' => $age, 'dob' => $dob, 'contact'=>$contact],
+        ['email' => $email, 'name' => $name, 'age' => $age, 'dob' => $dob, 'contact'=>$contact, 'img_data'=>$img_data],
         ['upsert' => true]
     );
     $mongo->executeBulkWrite('guvi_db.profiles',$bulk);

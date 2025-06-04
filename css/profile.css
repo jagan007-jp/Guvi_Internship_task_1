@@ -1,0 +1,42 @@
+#heading {
+    text-align: center;
+    align-items: center;
+    color: black;
+    text-shadow: 1px 1px gray;
+}
+
+.btn {
+    width: 300px;
+    height: 40px;
+    transition: 0.2s;
+    background-color: yellow;
+    border: 1px solid black;
+    color: black;
+    margin-left: 38%;
+}
+
+.btn:hover {
+    height: 45px;
+    background-color: rgb(137, 117, 0);
+}
+
+#profile_pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    float: right;
+    margin-right: 5%;
+    transition: 1s;
+}
+
+#profile_pic:hover {
+    height: 300px;
+    width: 300px;
+    border-radius: 0;
+    border: 2px solid black;
+}
+
+#profileResult {
+    text-align: center;
+    font-weight: bold;
+}

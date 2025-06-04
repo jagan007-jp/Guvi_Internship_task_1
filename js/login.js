@@ -9,7 +9,7 @@ $("#loginForm").on("submit", function (event) {
             password: $("#password").val()
         },
         success: function (response) {
-            if (response.length > 0) {
+            if (response.trim() !== "Invalid username or password") {
                 localStorage.setItem("email", response);
                 window.location.href = "../profile.html";
             } else {

@@ -1,2 +1,6 @@
 mongo-php-driver
 .env
+vendor
+composer.json
+composer.lock
+info.php
